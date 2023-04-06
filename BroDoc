@@ -1,0 +1,69 @@
+Day 1:
+
+    Setting up RSA key :
+
+        1) ssh-keygen -> used to make id_rsa and id_rsa.pub
+        These keys are used to make ssh connection.
+
+        2) Setup ssh connection
+        ssh user@ip -> used to ssh into a server
+
+        #### COMMANDS THAT WE RAN ####
+        
+        (-1) sudo pacman -S net-tools
+        -> was made to see the network information
+
+        (0) ifconfig | grep inet
+        -> returns the inet address..... in short the IP
+
+        (1) sudo systemctl status sshd.services
+        -> Was used to check if the port was made active for ssh
+        
+        (2) sudo systemctl start sshd.services
+        -> was used to make the port 22 active for ssh
+
+        (3) VOLA!!!! we can now ssh
+        -> ssh janhvi@192.168.208.13
+        -> we had successfully ssh into Jan's server
+        -> the ssh (Shrinija)
+        -> The server being us (Shr) and also the client (Jan).
+
+        (4) ran some commands.... tmux a
+        -> After a playful day we had stopped the the ssh port
+
+        (5) sudo systemctl stop sshd.services
+        -> used to stop the port 22 (security)
+        
+
+Day 2:
+
+        ### SETTING UP QEMU ###
+
+        1) WHY QEMU....?
+        -> It is used to emulate the architecture. of the system
+        -> Arch's being -> x86_64, ARM, ARCH....
+
+        2) WHY KVM..?
+        -> Hypervisor. (It is used to virtualize the system resources)
+
+        3) Downloading Alpine OS 
+        -> Why alpine? lightweight, small in size and have secure (based on musl and busybox)?
+        
+        4) qemu-system-x86_64 -hda <img-path> -m 4G -smp 2
+        -> this command is used to setup the img, img being alpine with 4G of ram and 2 cores being allocated
+
+        5) setup-alpine
+            -> root user setup
+            -> network drivers [eth0]
+            -> setting up the disk space
+            -> Enter(w/o knwoing)
+
+        6) Adding deps
+        -> Setting up environment
+            -> python -m venv <env-name>
+            -> source ./bin/activate
+        -> python, pip, numpy, pillow, opencv
+
+        7) SSH from client to server
+        -> scp -r /path/to/file root@ip:/path/at/server  
+        
