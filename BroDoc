@@ -67,3 +67,55 @@ Day 2:
         7) SSH from client to server
         -> scp -r /path/to/file root@ip:/path/at/server  
         
+
+Day 3: 
+
+    UI PART
+
+    -> Tech Stack                   
+        -React                          
+        -Next.js
+        -tailwindcss
+
+    -> Pages
+        -Homepage
+            -Login & Signup
+            -Rent & Tenant Info
+            -Use & Render
+            -Programming 
+            -Rendering
+                - (The Drag and drop)
+
+    BACKEND PART
+
+    -> DAO
+    -> DB
+    
+
+    ----------- PAGE TO DB -----------
+
+
+    1) Connecting database via node
+    2) Connecting Xterm with db info (webssh)
+
+Day 4:
+    
+    Buildin' the second part
+    
+    1) Setting up the image portion
+        - Drag and drop
+        - Saving the img on server
+
+    2) Shell Script
+        
+
+
+
+
+
+
+
+
+
+
+
